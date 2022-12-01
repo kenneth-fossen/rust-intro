@@ -15,7 +15,8 @@ pub fn compute_with_threads_mutex_arc(persons: Vec<Person>, work: fn(&[Person]) 
     let result = Mutex::new(0);
 
     // Add missing code to compute, using NUM_THREADS number of threads and mutex / arc combination
-
+    
+    
     result.into_inner().unwrap()
 }
 /// See: https://doc.rust-lang.org/std/sync/mpsc/index.html
